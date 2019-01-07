@@ -1,5 +1,7 @@
+# JAVA TECHNICAL TEST SOLUTION
+
 ========================
-BUILD OUTPUT DESCRIPTION
+## BUILD OUTPUT DESCRIPTION
 ========================
 
 When you build an Java application project that has a main class, the IDE
@@ -11,12 +13,13 @@ JAR files manifest file (MANIFEST.MF).
 To run the project from the command line, go to the dist folder and
 type the following:
 
+```bash
 java -jar test.jar {ARGS} 
-
+```
 To distribute this project, zip up the dist folder (including the lib folder)
 and distribute the ZIP file.
 
-Notes:
+### Notes:
 
 * If two JAR files on the project classpath have the same name, only the first
 JAR file is copied to the lib folder.
@@ -33,18 +36,19 @@ class name in the manifest Main-Class element.
 
 
 ========================
-USAGE DESCRIPTION
+## USAGE
 ========================
 
 To use this project to list the names and ID belonging to people that have been
 in the specified city, type the following:
 
+```bash
 java -jar test.jar {FILE} CITY {CITY_NAME}
-
+```
 To list the cities that a person has been to, type:
-
+```bash
 java -jar test.jar {FILE} ID {ID_VALUE}
-
-Notes:
+```
+### Notes:
 * For ease of use, the file should be placed in the /dist folder so you wont need
 to add the path to run it.
